@@ -229,7 +229,7 @@ elif st.session_state.page == "report":
         with d3:
             subject = urllib.parse.quote(f"Avenor Dossier — {name}")
             body = urllib.parse.quote(md_text[:1800] + ("\n\n[Truncated — attach the downloaded PDF for the full dossier]" if len(md_text) > 1800 else ""))
-            mailto = f"mailto:?subject={subject}&body={body}"
+            mailto = f"mailto:Talal.Irfan@yahoo.com?subject={subject}&body={body}"
             st.link_button("Email Dossier", mailto, use_container_width=True)
         st.caption("Email opens a pre-filled draft in your mail client — attach the downloaded PDF manually before sending.")
         st.markdown("</div>", unsafe_allow_html=True)
